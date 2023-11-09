@@ -1,6 +1,5 @@
 package org.example;
 
-import org.apache.log4j.BasicConfigurator;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
@@ -17,7 +16,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException, GitAPIException {
-        BasicConfigurator.configure();
         // Đường dẫn đến thư mục repository
         final String dir = System.getProperty("user.dir");
         System.getProperty("user.dir");
